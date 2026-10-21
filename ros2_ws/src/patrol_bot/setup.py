@@ -24,7 +24,8 @@ setup(
     },
     entry_points={
         'console_scripts': [
-            'hello = patrol_bot.hello:main'
+            'hello = patrol_bot.hello:main',
+            'heartbeat = patrol_bot.heartbeat:main',
         ],
     },
 )
