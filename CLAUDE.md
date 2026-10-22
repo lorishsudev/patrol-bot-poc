@@ -8,7 +8,7 @@ Proof-of-concept patrol robot built on **ROS 2 Jazzy** (installed at `/opt/ros/j
 
 ## Environment
 
-- Ubuntu 24.04 ARM64, ROS 2 Jazzy, Python nodes using `rclpy`, simulation in Gazebo Harmonic.
+- Dev machine: UTM virtual machine (hostname `patrol-dev`) running Ubuntu 24.04 ARM64, ROS 2 Jazzy, Python nodes using `rclpy`, simulation in Gazebo Harmonic.
 - Package: `ros2_ws/src/patrol_bot` (`ament_python`).
 - Target robot is TurtleBot3: its `/cmd_vel` uses `geometry_msgs/msg/TwistStamped` (not `Twist`), so publishers must send stamped messages.
 - Code also runs on a Raspberry Pi 5 (keep it ARM64-compatible and lightweight). Use `ROS_DOMAIN_ID=30` (`export ROS_DOMAIN_ID=30`) on both the dev machine and the Pi so they can discover each other.
