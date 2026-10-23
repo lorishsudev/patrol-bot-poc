@@ -26,6 +26,8 @@ setup(
         'console_scripts': [
             'hello = patrol_bot.hello:main',
             'heartbeat = patrol_bot.heartbeat:main',
+            'battery = patrol_bot.battery:main',
+            'status_monitor = patrol_bot.status_monitor:main',
         ],
     },
 )
